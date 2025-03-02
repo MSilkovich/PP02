@@ -8,15 +8,33 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/VisitkaUCR.styles.css" asp-append-version="true" />
     <style>
+        header {
+            position: fixed; 
+            color: red;
+            top: 0;
+            left: 0;
+            width: 100%; 
+            z-index: 1000; 
+        }
+
         .navbar-brand img {
-            width: 15%; 
-            filter: invert(100%);
+            width: auto; 
+            height: 40px; 
+        }
+
+        .navbar-brand {
+            padding-right: 0; 
+            margin-right: 1rem; 
+        }
+
+        main {
+            margin-top: 60px; 
         }
     </style>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">
                     <img src="images/guap_logo.png" alt="Logo" >    
@@ -26,12 +44,12 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                    <ul class="navbar-nav ">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link" asp-area="" asp-page="/Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                            <a class="nav-link" asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>
                     </ul>
                 </div>
