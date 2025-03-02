@@ -21,6 +21,62 @@
         background-color: rgba(255, 255, 255, 0.7);
         
     }
+    .search-form {
+        margin: 20px 0;
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .search-input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .filter-row {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .filter-select {
+        width: 30%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    /* Стили для карточек преподавателей */
+    .teacher-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .teacher-card {
+        width: calc(25% - 15px); /* 4 колонки с отступами */
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 0 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .teacher-card img {
+        width: calc(25% - 15px);
+        height: auto;
+        border-radius: 8px;
+        object-fit: cover;
+
+    }
+
+    .teacher-card h3 {
+        margin: 10px 0;
+        font-size: 16px;
+    }
 
 </style>
 
@@ -30,4 +86,37 @@
         <h1 class="text-white">Учись.<br>Изобретай.<br>Живи.</h1>
         <button class="button" >ПРЕПОДАВАТЕЛИ</button>
     </div>
+</div>
+
+    <div class="search-form container-fluid px-5">
+    <input type="text" class="search-input" placeholder="Поиск">
+    <div class="filter-row">
+        <select class="filter-select">
+            <option>Не выбрано</option>
+            <option>Должность 1</option>
+            <option>Должность 2</option>
+        </select>
+        <select class="filter-select">
+            <option>Все</option>
+            <option>Заведующий кафедрой</option>
+            <option>Преподаватель</option>
+        </select>
+        <select class="filter-select">
+            <option>Все</option>
+            <option>Подразделение 1</option>
+            <option>Подразделение 2</option>
+        </select>
+    </div>
+</div>
+
+<div class="teacher-cards container-fluid px-5"> <!-- Добавляем отступы по горизонтали -->
+    @for (int i = 1; i <= 12; i++)
+    {
+        <div class="teacher-card">
+            <img src="path/to/teacher@(i).jpg" alt="Teacher @(i)">
+            <h3>ФИО Преподавателя @(i)</h3>
+            <p>Специализация: Специальность @(i)</p>
+            <p>Факультет: Факультет @(i)</p>
+        </div>
+    }
 </div>
