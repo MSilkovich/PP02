@@ -28,3 +28,38 @@ C:\Users\silko\source\repos\VisitkaUCR\obj\Debug\net8.0\refint\VisitkaUCR.dll
 C:\Users\silko\source\repos\VisitkaUCR\obj\Debug\net8.0\VisitkaUCR.pdb
 C:\Users\silko\source\repos\VisitkaUCR\obj\Debug\net8.0\VisitkaUCR.genruntimeconfig.cache
 C:\Users\silko\source\repos\VisitkaUCR\obj\Debug\net8.0\ref\VisitkaUCR.dll
+C:\Users\36897\OneDrive\Рабочий стол\PP02\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\36897\OneDrive\Рабочий стол\PP02\bin\Debug\net8.0\appsettings.json
+C:\Users\36897\OneDrive\Рабочий стол\PP02\bin\Debug\net8.0\VisitkaUCR.staticwebassets.runtime.json
+C:\Users\36897\OneDrive\Рабочий стол\PP02\bin\Debug\net8.0\VisitkaUCR.staticwebassets.endpoints.json
+C:\Users\36897\OneDrive\Рабочий стол\PP02\bin\Debug\net8.0\VisitkaUCR.exe
+C:\Users\36897\OneDrive\Рабочий стол\PP02\bin\Debug\net8.0\VisitkaUCR.deps.json
+C:\Users\36897\OneDrive\Рабочий стол\PP02\bin\Debug\net8.0\VisitkaUCR.runtimeconfig.json
+C:\Users\36897\OneDrive\Рабочий стол\PP02\bin\Debug\net8.0\VisitkaUCR.dll
+C:\Users\36897\OneDrive\Рабочий стол\PP02\bin\Debug\net8.0\VisitkaUCR.pdb
+C:\Users\36897\OneDrive\Рабочий стол\PP02\obj\Debug\net8.0\VisitkaUCR.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\36897\OneDrive\Рабочий стол\PP02\obj\Debug\net8.0\VisitkaUCR.AssemblyInfoInputs.cache
+C:\Users\36897\OneDrive\Рабочий стол\PP02\obj\Debug\net8.0\VisitkaUCR.AssemblyInfo.cs
+C:\Users\36897\OneDrive\Рабочий стол\PP02\obj\Debug\net8.0\VisitkaUCR.csproj.CoreCompileInputs.cache
+C:\Users\36897\OneDrive\Рабочий стол\PP02\obj\Debug\net8.0\VisitkaUCR.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\36897\OneDrive\Рабочий стол\PP02\obj\Debug\net8.0\VisitkaUCR.RazorAssemblyInfo.cache
+C:\Users\36897\OneDrive\Рабочий стол\PP02\obj\Debug\net8.0\VisitkaUCR.RazorAssemblyInfo.cs
+C:\Users\36897\OneDrive\Рабочий стол\PP02\obj\Debug\net8.0\VisitkaUCR.sourcelink.json
+C:\Users\36897\OneDrive\Рабочий стол\PP02\obj\Debug\net8.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\36897\OneDrive\Рабочий стол\PP02\obj\Debug\net8.0\scopedcss\bundle\VisitkaUCR.styles.css
+C:\Users\36897\OneDrive\Рабочий стол\PP02\obj\Debug\net8.0\scopedcss\projectbundle\VisitkaUCR.bundle.scp.css
+C:\Users\36897\OneDrive\Рабочий стол\PP02\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\36897\OneDrive\Рабочий стол\PP02\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\36897\OneDrive\Рабочий стол\PP02\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\36897\OneDrive\Рабочий стол\PP02\obj\Debug\net8.0\staticwebassets\msbuild.VisitkaUCR.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\36897\OneDrive\Рабочий стол\PP02\obj\Debug\net8.0\staticwebassets\msbuild.VisitkaUCR.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\36897\OneDrive\Рабочий стол\PP02\obj\Debug\net8.0\staticwebassets\msbuild.build.VisitkaUCR.props
+C:\Users\36897\OneDrive\Рабочий стол\PP02\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.VisitkaUCR.props
+C:\Users\36897\OneDrive\Рабочий стол\PP02\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.VisitkaUCR.props
+C:\Users\36897\OneDrive\Рабочий стол\PP02\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\36897\OneDrive\Рабочий стол\PP02\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\36897\OneDrive\Рабочий стол\PP02\obj\Debug\net8.0\VisitkaUCR.dll
+C:\Users\36897\OneDrive\Рабочий стол\PP02\obj\Debug\net8.0\refint\VisitkaUCR.dll
+C:\Users\36897\OneDrive\Рабочий стол\PP02\obj\Debug\net8.0\VisitkaUCR.pdb
+C:\Users\36897\OneDrive\Рабочий стол\PP02\obj\Debug\net8.0\VisitkaUCR.genruntimeconfig.cache
+C:\Users\36897\OneDrive\Рабочий стол\PP02\obj\Debug\net8.0\ref\VisitkaUCR.dll
