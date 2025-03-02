@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ih+iDLL6WAo9zL5TfZsPR3Iak7jxjDlIkMzkgk5RK7o=",
+  "Hash": "rS8zZl9+ninpbAptdKJwrzRjE6xJtAw29PMe2S90m00=",
   "Source": "VisitkaUCR",
   "BasePath": "_content/VisitkaUCR",
   "Mode": "Default",
@@ -122,6 +122,27 @@
       "OriginalItemSpec": "wwwroot\\images\\bg_3.jpg"
     },
     {
+      "Identity": "C:\\Users\\36897\\OneDrive\\Рабочий стол\\PP02\\wwwroot\\images\\card_bg.jpg",
+      "SourceId": "VisitkaUCR",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\36897\\OneDrive\\Рабочий стол\\PP02\\wwwroot\\",
+      "BasePath": "_content/VisitkaUCR",
+      "RelativePath": "images/card_bg#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xefjft29mw",
+      "Integrity": "N8jYcmbmuJaOEdw2h2T2U7n3zJOxZyMvkZTn32uSyns=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\card_bg.jpg"
+    },
+    {
       "Identity": "C:\\Users\\36897\\OneDrive\\Рабочий стол\\PP02\\wwwroot\\images\\guap_logo.png",
       "SourceId": "VisitkaUCR",
       "SourceType": "Discovered",
@@ -141,6 +162,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\guap_logo.png"
+    },
+    {
+      "Identity": "C:\\Users\\36897\\OneDrive\\Рабочий стол\\PP02\\wwwroot\\images\\teacher_icon.jpg",
+      "SourceId": "VisitkaUCR",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\36897\\OneDrive\\Рабочий стол\\PP02\\wwwroot\\",
+      "BasePath": "_content/VisitkaUCR",
+      "RelativePath": "images/teacher_icon#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "720xug6ls5",
+      "Integrity": "ccNn80iUuyaY846duhx5d4OEMewu7L3OqFnVYPDJdVE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\teacher_icon.jpg"
     },
     {
       "Identity": "C:\\Users\\36897\\OneDrive\\Рабочий стол\\PP02\\wwwroot\\js\\site.js",
@@ -1609,6 +1651,88 @@
       ]
     },
     {
+      "Route": "images/card_bg.jpg",
+      "AssetFile": "C:\\Users\\36897\\OneDrive\\Рабочий стол\\PP02\\wwwroot\\images\\card_bg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "171797"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N8jYcmbmuJaOEdw2h2T2U7n3zJOxZyMvkZTn32uSyns=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 11:02:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-N8jYcmbmuJaOEdw2h2T2U7n3zJOxZyMvkZTn32uSyns="
+        }
+      ]
+    },
+    {
+      "Route": "images/card_bg.xefjft29mw.jpg",
+      "AssetFile": "C:\\Users\\36897\\OneDrive\\Рабочий стол\\PP02\\wwwroot\\images\\card_bg.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "171797"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N8jYcmbmuJaOEdw2h2T2U7n3zJOxZyMvkZTn32uSyns=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 11:02:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xefjft29mw"
+        },
+        {
+          "Name": "label",
+          "Value": "images/card_bg.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-N8jYcmbmuJaOEdw2h2T2U7n3zJOxZyMvkZTn32uSyns="
+        }
+      ]
+    },
+    {
       "Route": "images/guap_logo.fcj0pqcbis.png",
       "AssetFile": "C:\\Users\\36897\\OneDrive\\Рабочий стол\\PP02\\wwwroot\\images\\guap_logo.png",
       "Selectors": [],
@@ -1687,6 +1811,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Eb32K8PZcaDSaJaBT2RZ95Bn39ayIJkTVK+j8AWIdwE="
+        }
+      ]
+    },
+    {
+      "Route": "images/teacher_icon.720xug6ls5.jpg",
+      "AssetFile": "C:\\Users\\36897\\OneDrive\\Рабочий стол\\PP02\\wwwroot\\images\\teacher_icon.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "173997"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ccNn80iUuyaY846duhx5d4OEMewu7L3OqFnVYPDJdVE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 10:28:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "720xug6ls5"
+        },
+        {
+          "Name": "label",
+          "Value": "images/teacher_icon.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ccNn80iUuyaY846duhx5d4OEMewu7L3OqFnVYPDJdVE="
+        }
+      ]
+    },
+    {
+      "Route": "images/teacher_icon.jpg",
+      "AssetFile": "C:\\Users\\36897\\OneDrive\\Рабочий стол\\PP02\\wwwroot\\images\\teacher_icon.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "173997"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ccNn80iUuyaY846duhx5d4OEMewu7L3OqFnVYPDJdVE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Mar 2025 10:28:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ccNn80iUuyaY846duhx5d4OEMewu7L3OqFnVYPDJdVE="
         }
       ]
     },

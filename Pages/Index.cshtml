@@ -48,7 +48,6 @@
         border-radius: 4px;
     }
 
-    /* Стили для карточек преподавателей */
     .teacher-cards {
         display: flex;
         flex-wrap: wrap;
@@ -57,15 +56,17 @@
     }
 
     .teacher-card {
-        width: calc(25% - 15px); /* 4 колонки с отступами */
+        width: calc(25% - 15px); 
         background-color: #fff;
         border: 1px solid #ddd;
         border-radius: 8px;
-        padding: 0 20px;
+        padding: 30px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-image: url('images/card_bg.jpg'); 
+        background-size: cover; 
     }
 
-    .teacher-card img {
+    .card-icon {
         width: calc(25% - 15px);
         height: auto;
         border-radius: 8px;
@@ -73,9 +74,13 @@
 
     }
 
-    .teacher-card h3 {
+    .teacher-card p {
         margin: 10px 0;
-        font-size: 16px;
+    }
+    .card-logo {
+        width: calc(25% - 10px);
+        height: auto;
+        margin-left: 20px;
     }
 
 </style>
@@ -109,14 +114,19 @@
     </div>
 </div>
 
-<div class="teacher-cards container-fluid px-5"> <!-- Добавляем отступы по горизонтали -->
+<div class="teacher-cards container-fluid px-5">
     @for (int i = 1; i <= 12; i++)
     {
-        <div class="teacher-card">
-            <img src="path/to/teacher@(i).jpg" alt="Teacher @(i)">
-            <h3>ФИО Преподавателя @(i)</h3>
-            <p>Специализация: Специальность @(i)</p>
-            <p>Факультет: Факультет @(i)</p>
+       <div class="teacher-card text-light">
+            <div class="card-content d-flex align-items-start">
+                <img src="images/teacher_icon.jpg" alt="Teacher @(i)" class="card-icon">
+                    <div class="card-text " style=" margin: 10px;">
+                        <p>ФИО Преподавателя @(i)</p>
+                        <p>Специализация: @(i)</p> 
+                    </div>
+                <img src="images/guap_logo.png" alt="Logo" class="card-logo">  
+            </div>
+            <p>Факультет: @(i)</p>
         </div>
     }
 </div>

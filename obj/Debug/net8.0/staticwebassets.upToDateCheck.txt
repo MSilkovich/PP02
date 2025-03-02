@@ -1,7 +1,9 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\bg_3.jpg
+wwwroot\images\card_bg.jpg
 wwwroot\images\guap_logo.png
+wwwroot\images\teacher_icon.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
