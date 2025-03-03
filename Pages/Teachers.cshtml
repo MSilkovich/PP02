@@ -1,0 +1,187 @@
+﻿@* @page
+@model VisitkaUCR.Pages.TeachersModel
+
+@{
+    ViewData["Title"] = "Teachers";
+}
+
+<h1>Teachers</h1>
+
+<h4>Teacher</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Teacher.Id" class="control-label"></label>
+                <input asp-for="Teacher.Id" class="form-control" />
+                <span asp-validation-for="Teacher.Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Teacher.Name" class="control-label"></label>
+                <input asp-for="Teacher.Name" class="form-control" />
+                <span asp-validation-for="Teacher.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Teacher.Surname" class="control-label"></label>
+                <input asp-for="Teacher.Surname" class="form-control" />
+                <span asp-validation-for="Teacher.Surname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Teacher.Patronymic" class="control-label"></label>
+                <input asp-for="Teacher.Patronymic" class="form-control" />
+                <span asp-validation-for="Teacher.Patronymic" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Teacher.Photo" class="control-label"></label>
+                <input asp-for="Teacher.Photo" class="form-control" />
+                <span asp-validation-for="Teacher.Photo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Teacher.Email" class="control-label"></label>
+                <input asp-for="Teacher.Email" class="form-control" />
+                <span asp-validation-for="Teacher.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+ *@
+ @model List<VisitkaUCR.Models.Teacher>
+@{
+    ViewData["Title"] = "Преподаватели";
+}
+
+<h2 class="text-center">Преподаватели</h2>
+
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="Поиск..." class="form-control" onkeyup="filterTeachers()">
+</div>
+
+<div class="filters">
+    <select id="positionFilter" class="form-select" onchange="filterTeachers()">
+        <option value="">Выберите должность</option>
+        @foreach (var position in ViewBag.Positions)
+        {
+            <option value="@position">@position</option>
+        }
+    </select>
+
+    <select id="facultyFilter" class="form-select" onchange="filterTeachers()">
+        <option value="">Выберите факультет</option>
+        @foreach (var faculty in ViewBag.Faculties)
+        {
+            <option value="@faculty">@faculty</option>
+        }
+    </select>
+
+    <select id="divisionFilter" class="form-select" onchange="filterTeachers()">
+        <option value="">Выберите подразделение</option>
+        @foreach (var division in ViewBag.Divisions)
+        {
+            <option value="@division">@division</option>
+        }
+    </select>
+</div>
+
+<div class="teachers-container">
+    @foreach (var teacher in Model)
+    {
+        <div class="teacher-card" data-position="@string.Join(",", teacher.IdPositions.Select(p => p.Title))"
+             data-faculty="@string.Join(",", teacher.IdPositions.Select(p => p.IdDivisionNavigation.IdFacultyNavigation.Title))"
+             data-division="@string.Join(",", teacher.IdPositions.Select(p => p.IdDivisionNavigation.Title))">
+
+            <div class="teacher-photo">
+                @if (teacher.Photo != null)
+                {
+                    string base64String = Convert.ToBase64String(teacher.Photo);
+                    <img src="data:image/jpeg;base64,@base64String" alt="Фото @teacher.Surname">
+                }
+                else
+                {
+                    <img src="/images/default-avatar.png" alt="Нет фото">
+                }
+            </div>
+
+            <div class="teacher-info">
+                <h3>@teacher.Surname @teacher.Name @teacher.Patronymic</h3>
+                <p>Email: <a href="mailto:@teacher.Email">@teacher.Email</a></p>
+                <p><strong>Должность:</strong> @string.Join(", ", teacher.IdPositions.Select(p => p.Title))</p>
+                <p><strong>Дисциплины:</strong> @string.Join(", ", teacher.TeachersDisciplines.Select(d => d.IdDisciplineNavigation.Title))</p>
+                <p><strong>Достижения:</strong> @string.Join(", ", teacher.IdAchievements.Select(a => a.Title))</p>
+                <p><strong>Публикации:</strong> @string.Join(", ", teacher.IdPublications.Select(p => p.Title))</p>
+            </div>
+        </div>
+    }
+</div>
+
+<script>
+    function filterTeachers() {
+        let search = document.getElementById("searchInput").value.toLowerCase();
+        let position = document.getElementById("positionFilter").value.toLowerCase();
+        let faculty = document.getElementById("facultyFilter").value.toLowerCase();
+        let division = document.getElementById("divisionFilter").value.toLowerCase();
+
+        document.querySelectorAll(".teacher-card").forEach(card => {
+            let cardText = card.innerText.toLowerCase();
+            let cardPosition = card.getAttribute("data-position").toLowerCase();
+            let cardFaculty = card.getAttribute("data-faculty").toLowerCase();
+            let cardDivision = card.getAttribute("data-division").toLowerCase();
+
+            if (cardText.includes(search) &&
+                (position === "" || cardPosition.includes(position)) &&
+                (faculty === "" || cardFaculty.includes(faculty)) &&
+                (division === "" || cardDivision.includes(division))) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    }
+</script>
+
+<style>
+    .search-container {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .filters {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .teachers-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .teacher-card {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+        background: #f9f9f9;
+    }
+
+    .teacher-photo img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+</style>

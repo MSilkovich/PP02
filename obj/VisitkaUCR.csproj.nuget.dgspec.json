@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\silko\\source\\repos\\VisitkaUCR\\VisitkaUCR.csproj": {}
+    "C:\\Users\\egorj\\Source\\Repos\\PP02\\VisitkaUCR.csproj": {}
   },
   "projects": {
-    "C:\\Users\\silko\\source\\repos\\VisitkaUCR\\VisitkaUCR.csproj": {
+    "C:\\Users\\egorj\\Source\\Repos\\PP02\\VisitkaUCR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\silko\\source\\repos\\VisitkaUCR\\VisitkaUCR.csproj",
+        "projectUniqueName": "C:\\Users\\egorj\\Source\\Repos\\PP02\\VisitkaUCR.csproj",
         "projectName": "VisitkaUCR",
-        "projectPath": "C:\\Users\\silko\\source\\repos\\VisitkaUCR\\VisitkaUCR.csproj",
-        "packagesPath": "C:\\Users\\silko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\silko\\source\\repos\\VisitkaUCR\\obj\\",
+        "projectPath": "C:\\Users\\egorj\\Source\\Repos\\PP02\\VisitkaUCR.csproj",
+        "packagesPath": "C:\\Users\\egorj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\egorj\\Source\\Repos\\PP02\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\silko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\egorj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,6 +43,36 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
