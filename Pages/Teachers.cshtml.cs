@@ -60,13 +60,17 @@ namespace VisitkaUCR.Pages
             _context = context;
         }
 
+        // Используем BindProperty для привязки данных
+        [BindProperty]
         public List<Teacher> Teachers { get; set; } = new List<Teacher>();
+
         public List<string> Positions { get; set; } = new List<string>();
         public List<string> Faculties { get; set; } = new List<string>();
         public List<string> Divisions { get; set; } = new List<string>();
 
         public async Task<IActionResult> OnGetAsync()
         {
+            // Загружаем данные из базы данных
             Teachers = await _context.Teachers
                 .Include(t => t.IdPositions)
                     .ThenInclude(p => p.IdDivisionNavigation)
@@ -77,6 +81,7 @@ namespace VisitkaUCR.Pages
                 .Include(t => t.IdPublications)
                 .ToListAsync();
 
+            // Загружаем данные для фильтров
             Positions = await _context.Positions.Select(p => p.Title).Distinct().ToListAsync();
             Faculties = await _context.Faculties.Select(f => f.Title).Distinct().ToListAsync();
             Divisions = await _context.Divisions.Select(d => d.Title).Distinct().ToListAsync();

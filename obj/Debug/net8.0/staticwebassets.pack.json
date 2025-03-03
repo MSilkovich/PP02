@@ -13,6 +13,22 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\egorj\\Source\\Repos\\PP02\\wwwroot\\images\\bg_3.jpg",
+      "PackagePath": "staticwebassets\\images\\bg_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\egorj\\Source\\Repos\\PP02\\wwwroot\\images\\card_bg.jpg",
+      "PackagePath": "staticwebassets\\images\\card_bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\egorj\\Source\\Repos\\PP02\\wwwroot\\images\\guap_logo.png",
+      "PackagePath": "staticwebassets\\images\\guap_logo.png"
+    },
+    {
+      "Id": "C:\\Users\\egorj\\Source\\Repos\\PP02\\wwwroot\\images\\teacher_icon.jpg",
+      "PackagePath": "staticwebassets\\images\\teacher_icon.jpg"
+    },
+    {
       "Id": "C:\\Users\\egorj\\Source\\Repos\\PP02\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

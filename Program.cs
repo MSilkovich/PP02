@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using VisitkaUCR.Models;
+
 namespace VisitkaUCR
 {
     public class Program
@@ -5,6 +8,10 @@ namespace VisitkaUCR
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            // Регистрируем PostgresContext в контейнере зависимостей
+            builder.Services.AddDbContext<PostgresContext>(options =>
+                options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             // Add services to the container.
             builder.Services.AddRazorPages();
