@@ -13,8 +13,20 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\egorj\\Source\\Repos\\PP02\\wwwroot\\images\\bg2_image.jpg",
+      "PackagePath": "staticwebassets\\images\\bg2_image.jpg"
+    },
+    {
+      "Id": "C:\\Users\\egorj\\Source\\Repos\\PP02\\wwwroot\\images\\bg3_image.jpg",
+      "PackagePath": "staticwebassets\\images\\bg3_image.jpg"
+    },
+    {
       "Id": "C:\\Users\\egorj\\Source\\Repos\\PP02\\wwwroot\\images\\bg_3.jpg",
       "PackagePath": "staticwebassets\\images\\bg_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\egorj\\Source\\Repos\\PP02\\wwwroot\\images\\bg_image.jpg",
+      "PackagePath": "staticwebassets\\images\\bg_image.jpg"
     },
     {
       "Id": "C:\\Users\\egorj\\Source\\Repos\\PP02\\wwwroot\\images\\card_bg.jpg",

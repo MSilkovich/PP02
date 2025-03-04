@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VisitkaUCR")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41aec6cf8e9cf8929c515a25e78d53281d47caf7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d9abaff1a680d43a75a2b6e45a13e935890af35")]
 [assembly: System.Reflection.AssemblyProductAttribute("VisitkaUCR")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VisitkaUCR")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
