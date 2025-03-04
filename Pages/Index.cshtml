@@ -250,8 +250,8 @@
     {
         <div class="teacher-card text-light" data-position="@string.Join(",", teacher.IdPositions.Select(p => p.Title))"
              data-faculty="@string.Join(",", teacher.IdPositions.Select(p => p.IdDivisionNavigation.IdFacultyNavigation.Title))"
-             data-division="@string.Join(",", teacher.IdPositions.Select(p => p.IdDivisionNavigation.Title))">
-          @*   data-fio="@($"{teacher.Surname} {teacher.Name} {teacher.Patronymic}")" *@
+             data-division="@string.Join(",", teacher.IdPositions.Select(p => p.IdDivisionNavigation.Title))"
+             data-fio="@($"{teacher.Surname} {teacher.Name} {teacher.Patronymic}")" >
 
             <div class="card-content">
                 <div class="front">
@@ -307,7 +307,8 @@
         let division = document.getElementById("divisionFilter").value.toLowerCase();
 
         document.querySelectorAll(".teacher-card").forEach(card => {
-            let cardText = card.innerText.toLowerCase();
+        
+            let cardText = card.getAttribute("data-fio").toLowerCase();
             let cardPosition = card.getAttribute("data-position").toLowerCase();
             let cardFaculty = card.getAttribute("data-faculty").toLowerCase();
             let cardDivision = card.getAttribute("data-division").toLowerCase();
